@@ -6,7 +6,6 @@ target 'Disco' do
   use_frameworks!
 
   # Pods for Disco
-  pod 'AppLovinMediationVerveCustomNetworkAdapter', '2.16.0.0'
   pod 'GoogleMobileAds-HyBid-Adapters', '2.16.0.0'
   pod 'FirebaseAnalytics'
   pod 'FLEX', :configurations => ['Debug']

@@ -1,8 +1,4 @@
 PODS:
-  - AppLovinMediationVerveCustomNetworkAdapter (2.16.0.0):
-    - AppLovinSDK (>= 11.1.2)
-    - HyBid (= 2.16.0)
-  - AppLovinSDK (11.5.1)
   - FirebaseAnalytics (10.1.0):
     - FirebaseAnalytics/AdIdSupport (= 10.1.0)
     - FirebaseCore (~> 10.0)
@@ -102,15 +98,12 @@ PODS:
   - PromisesObjC (2.1.1)
 
 DEPENDENCIES:
-  - AppLovinMediationVerveCustomNetworkAdapter (= 2.16.0.0)
   - FirebaseAnalytics
   - FLEX
   - GoogleMobileAds-HyBid-Adapters (= 2.16.0.0)
 
 SPEC REPOS:
   trunk:
-    - AppLovinMediationVerveCustomNetworkAdapter
-    - AppLovinSDK
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseCoreInternal
@@ -126,8 +119,6 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
-  AppLovinMediationVerveCustomNetworkAdapter: 49ee0fdfaf545a338a4a288ff555226976413ce2
-  AppLovinSDK: 40398f6ec127e01f53992b2acd663252647c0dbb
   FirebaseAnalytics: 24cb27b52b2e11ad5013528195b4ca0755dec960
   FirebaseCore: 55e7ae35991ccca4db03ff8d8df6ed5f17a3e4c7
   FirebaseCoreInternal: 96d75228e10fd369564da51bd898414eb0f54df5
@@ -142,6 +133,6 @@ SPEC CHECKSUMS:
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
 
-PODFILE CHECKSUM: 59eaa9cf0cdeb47ab3e955d94db0d9836f8ec454
+PODFILE CHECKSUM: d1c985aa8965d53a9dda71f0e33f2e214aca509c
 
 COCOAPODS: 1.11.3
