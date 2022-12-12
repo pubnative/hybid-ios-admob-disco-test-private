@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcK-Ki-q0c" userLabel="AppLovin Mediation Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcK-Ki-q0c" userLabel="AdMob Mediation Button">
                                 <rect key="frame" x="16" y="129" width="382" height="33"/>
                                 <color key="backgroundColor" red="0.85098618270000004" green="0.85097014900000001" blue="0.85098105670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <accessibility key="accessibilityConfiguration" identifier="appLovinMediationButton" label="AppLovin Mediation Button">
+                                <accessibility key="accessibilityConfiguration" identifier="appLovinMediationButton" label="AdMob Mediation Button">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                                 <constraints>

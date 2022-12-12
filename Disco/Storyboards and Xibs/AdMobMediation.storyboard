@@ -282,7 +282,7 @@
         <!--AdMob Mediation Rewarded-->
         <scene sceneID="Ev2-m2-Ovh">
             <objects>
-                <viewController title="AppLovin Mediation Rewarded" id="nDb-5D-VdQ" userLabel="AdMob Mediation Rewarded" customClass="Rewarded" customModule="Disco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="AdMob Mediation Rewarded" id="nDb-5D-VdQ" userLabel="AdMob Mediation Rewarded" customClass="Rewarded" customModule="Disco" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qr8-w6-tiO"/>
                         <viewControllerLayoutGuide type="bottom" id="42r-R7-7S1"/>

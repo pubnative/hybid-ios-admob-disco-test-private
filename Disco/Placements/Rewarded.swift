@@ -51,7 +51,7 @@ class Rewarded: UIViewController {
                 print("Reward received:\(String(describing: reward))")
             })
         } else {
-            print("Ad wasn't ready")
+            print("Ad wasn't ready.")
         }
     }
     
