@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="quoteCell" rowHeight="56" id="KGk-i7-Jjw" customClass="QuoteTableViewCell" customModule="AppLovin_Mediation_Waterfall_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arX-TE-xyu">
+                        <rect key="frame" x="0.0" y="3" width="358" height="20.333333333333332"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWQ-F4-OLL">
+                        <rect key="frame" x="0.0" y="31.333333333333329" width="358" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="HtJ-JY-8lT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="arX-TE-xyu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="6PQ-ri-TVW"/>
+                    <constraint firstAttribute="trailing" secondItem="YWQ-F4-OLL" secondAttribute="trailing" id="CzI-kJ-mcd"/>
+                    <constraint firstItem="YWQ-F4-OLL" firstAttribute="top" secondItem="arX-TE-xyu" secondAttribute="bottom" constant="8" symbolic="YES" id="DDB-rl-uv9"/>
+                    <constraint firstAttribute="bottom" secondItem="YWQ-F4-OLL" secondAttribute="bottom" constant="3.6666666666666714" id="VVa-8w-RTa"/>
+                    <constraint firstItem="arX-TE-xyu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ofs-aC-s9d"/>
+                    <constraint firstAttribute="trailing" secondItem="arX-TE-xyu" secondAttribute="trailing" id="xth-hU-IDw"/>
+                    <constraint firstItem="YWQ-F4-OLL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zTV-LL-snP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="quoteAuthor" destination="YWQ-F4-OLL" id="aJY-ox-SRB"/>
+                <outlet property="quoteText" destination="arX-TE-xyu" id="sLz-EE-4Xx"/>
+            </connections>
+            <point key="canvasLocation" x="104.61538461538461" y="24.881516587677723"/>
+        </tableViewCell>
+    </objects>
+</document>

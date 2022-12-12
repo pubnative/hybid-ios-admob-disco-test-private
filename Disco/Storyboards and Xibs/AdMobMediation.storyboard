@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sx8-UP-Yed">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Banner-->
+        <scene sceneID="WaA-ap-4RN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Banner" id="Sv0-bR-znY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Raj-Me-SBo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x89-Dc-bFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6325" y="660"/>
+        </scene>
+        <!--AdMob Mediation-->
+        <scene sceneID="lnP-tG-wkY">
+            <objects>
+                <viewController title="AdMob Mediation" id="sx8-UP-Yed" customClass="AdTypeOptionsViewController" customModule="Disco" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6NS-T4-kdv"/>
+                        <viewControllerLayoutGuide type="bottom" id="qx6-qg-7RK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qVs-uc-G7X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Format" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfM-Wg-Xlm" userLabel="Format">
+                                <rect key="frame" x="16" y="56" width="42.5" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="formatLabel" label="Format Label"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PsN-9o-zfv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="PsN-9o-zfv"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="qPl-tG-ErU">
+                                <rect key="frame" x="16" y="85" width="382" height="193"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aN-xv-bQL" userLabel="Native Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="33"/>
+                                        <color key="backgroundColor" red="0.85098618270000004" green="0.85097014900000001" blue="0.85098105670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="nativeButton" label="Native Button"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Native">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.44761112330000002" green="0.097065538169999993" blue="0.48637124900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ND3-io-5zL" kind="show" id="KTy-Xy-M2g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4da-Dd-sBT" userLabel="Banner Button">
+                                        <rect key="frame" x="0.0" y="40" width="382" height="33"/>
+                                        <color key="backgroundColor" red="0.85098618270000004" green="0.85097014900000001" blue="0.85098105670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="bannerButton" label="Banner Button"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Banner">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.44761112330000002" green="0.097065538169999993" blue="0.48637124900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choosingBanner:" destination="sx8-UP-Yed" eventType="touchUpInside" id="QJS-tE-Seh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEY-uq-Ga0" userLabel="MRect Button">
+                                        <rect key="frame" x="0.0" y="80" width="382" height="33"/>
+                                        <color key="backgroundColor" red="0.85098618270000004" green="0.85097014900000001" blue="0.85098105670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="mRectButton" label="MRect Button"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="MRect">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.44761112330000002" green="0.097065538169999993" blue="0.48637124900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choosingMRect:" destination="sx8-UP-Yed" eventType="touchUpInside" id="R1W-H3-aTX"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mB-9c-Y7i" userLabel="Leaderboard Button">
+                                        <rect key="frame" x="0.0" y="116.5" width="382" height="0.0"/>
+                                        <color key="backgroundColor" red="0.85098618270000004" green="0.85097014900000001" blue="0.85098105670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="mRectButton" label="MRect Button"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Leaderboard">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.44761112330000002" green="0.097065538169999993" blue="0.48637124900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
+                                        <connections>
+                                            <action selector="choosingLeaderboard:" destination="sx8-UP-Yed" eventType="touchUpInside" id="fYk-IQ-XH5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsm-AX-qCY" userLabel="Interstitial Button">
+                                        <rect key="frame" x="0.0" y="120" width="382" height="33"/>
+                                        <color key="backgroundColor" red="0.85098618270000004" green="0.85097014900000001" blue="0.85098105670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="interstitialButton" label="Interstitial Button"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Interstitial">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.44761112330000002" green="0.097065538169999993" blue="0.48637124900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="xk5-Rv-bO9" kind="show" id="y3B-U5-meS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnt-v6-RrU" userLabel="Rewarded Button">
+                                        <rect key="frame" x="0.0" y="160" width="382" height="33"/>
+                                        <color key="backgroundColor" red="0.85098618270000004" green="0.85097014900000001" blue="0.85098105670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="rewardedButton" label="Rewarded Button"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="382" id="Lpt-CS-lu4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Rewarded">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.44761112330000002" green="0.097065538169999993" blue="0.48637124900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="nDb-5D-VdQ" kind="show" id="grx-jG-Rwc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Loo-x6-6Ag"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qPl-tG-ErU" firstAttribute="leading" secondItem="Loo-x6-6Ag" secondAttribute="leading" constant="16" id="6PS-DX-mdo"/>
+                            <constraint firstItem="cfM-Wg-Xlm" firstAttribute="top" secondItem="Loo-x6-6Ag" secondAttribute="top" constant="8" id="7qo-iZ-eBj"/>
+                            <constraint firstItem="qPl-tG-ErU" firstAttribute="top" secondItem="cfM-Wg-Xlm" secondAttribute="bottom" constant="8" symbolic="YES" id="bsO-8B-HC8"/>
+                            <constraint firstItem="Loo-x6-6Ag" firstAttribute="trailing" secondItem="qPl-tG-ErU" secondAttribute="trailing" constant="16" id="uqX-Oi-oQ6"/>
+                            <constraint firstItem="cfM-Wg-Xlm" firstAttribute="leading" secondItem="Loo-x6-6Ag" secondAttribute="leading" constant="16" id="vXL-JL-nvN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ad options" id="73S-eO-r3z">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="AiB-Ff-lM7"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Sv0-bR-znY" kind="show" identifier="goToBannerScenarios" id="KX5-k8-FE8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pfm-Vh-max" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5588" y="243"/>
+        </scene>
+        <!--AdMob Mediation Interstitial-->
+        <scene sceneID="cgt-Vz-MFS">
+            <objects>
+                <viewController title="In-view Interstitial" id="xk5-Rv-bO9" userLabel="AdMob Mediation Interstitial" customClass="Interstitial" customModule="Disco" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cYy-x9-eHW"/>
+                        <viewControllerLayoutGuide type="bottom" id="GKT-0s-Fid"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8WA-KF-qEB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUC-WL-LeU">
+                                <rect key="frame" x="16" y="95" width="382" height="33"/>
+                                <color key="backgroundColor" red="0.85098040100000005" green="0.85098040100000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loadAdButton" label="Load Ad Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="ay0-u4-Nrr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Load Ad"/>
+                                <connections>
+                                    <action selector="loadAdTouchUpInside:" destination="xk5-Rv-bO9" eventType="touchUpInside" id="3We-9y-Oab"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="AhC-a3-mgy">
+                                <rect key="frame" x="188.5" y="400.5" width="37" height="37"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVc-NP-WML">
+                                <rect key="frame" x="16" y="136" width="382" height="33"/>
+                                <color key="backgroundColor" red="0.85882353779999998" green="0.85882353779999998" blue="0.85882353779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="showAdButton" label="Show Ad Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Ufd-ja-YSK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Show Ad"/>
+                                <connections>
+                                    <action selector="showAdTouchUpInside:" destination="xk5-Rv-bO9" eventType="touchUpInside" id="ZHn-Vd-8Ep"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKS-ih-0aG" userLabel="Debug Button">
+                                <rect key="frame" x="20" y="771" width="374" height="33"/>
+                                <color key="backgroundColor" red="0.36470589040000001" green="0.59607845540000004" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="debugButton" label="Debug Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="qXw-pn-ebN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Debug">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="qXw-pn-ebN"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showDebugView:" destination="xk5-Rv-bO9" eventType="touchUpInside" id="HsS-6I-44P"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CjP-Ww-nRi">
+                                <rect key="frame" x="16" y="56" width="378" height="32"/>
+                                <segments>
+                                    <segment title="Video"/>
+                                    <segment title="HTML"/>
+                                </segments>
+                                <connections>
+                                    <action selector="choosingInterstitialType:" destination="xk5-Rv-bO9" eventType="valueChanged" id="B8v-AU-P20"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cRC-c6-ZhM"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cUC-WL-LeU" firstAttribute="leading" secondItem="cRC-c6-ZhM" secondAttribute="leading" constant="16" id="0uQ-9H-T9E"/>
+                            <constraint firstItem="gVc-NP-WML" firstAttribute="top" secondItem="cUC-WL-LeU" secondAttribute="bottom" constant="8" id="3l6-XJ-Er1"/>
+                            <constraint firstItem="CjP-Ww-nRi" firstAttribute="leading" secondItem="cRC-c6-ZhM" secondAttribute="leading" constant="16" id="4DL-8a-Xc1"/>
+                            <constraint firstItem="cRC-c6-ZhM" firstAttribute="trailing" secondItem="gVc-NP-WML" secondAttribute="trailing" constant="16" id="6YJ-B6-7mI"/>
+                            <constraint firstItem="cRC-c6-ZhM" firstAttribute="trailing" secondItem="vKS-ih-0aG" secondAttribute="trailing" constant="20" id="C4h-0w-v0T"/>
+                            <constraint firstItem="vKS-ih-0aG" firstAttribute="leading" secondItem="cRC-c6-ZhM" secondAttribute="leading" constant="20" id="Cya-sH-h8P"/>
+                            <constraint firstItem="AhC-a3-mgy" firstAttribute="centerY" secondItem="8WA-KF-qEB" secondAttribute="centerY" id="Fzy-ZI-YZD"/>
+                            <constraint firstItem="cRC-c6-ZhM" firstAttribute="trailing" secondItem="cUC-WL-LeU" secondAttribute="trailing" constant="16" id="OZt-gq-hPY"/>
+                            <constraint firstItem="cRC-c6-ZhM" firstAttribute="trailing" secondItem="CjP-Ww-nRi" secondAttribute="trailing" constant="20" id="YOK-fr-7Za"/>
+                            <constraint firstItem="gVc-NP-WML" firstAttribute="leading" secondItem="cRC-c6-ZhM" secondAttribute="leading" constant="16" id="dfA-td-QUW"/>
+                            <constraint firstItem="cRC-c6-ZhM" firstAttribute="bottom" secondItem="vKS-ih-0aG" secondAttribute="bottom" constant="34" id="p9q-J9-lK7"/>
+                            <constraint firstItem="AhC-a3-mgy" firstAttribute="centerX" secondItem="8WA-KF-qEB" secondAttribute="centerX" id="pPs-LX-lZX"/>
+                            <constraint firstItem="CjP-Ww-nRi" firstAttribute="top" secondItem="cRC-c6-ZhM" secondAttribute="top" constant="8" id="wfC-yM-SZb"/>
+                            <constraint firstItem="cUC-WL-LeU" firstAttribute="top" secondItem="CjP-Ww-nRi" secondAttribute="bottom" constant="8" symbolic="YES" id="ws7-Qp-piZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="In-view Interstitial" id="waB-qp-oPV"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="AhC-a3-mgy" id="7jl-2U-40k"/>
+                        <outlet property="debugButton" destination="vKS-ih-0aG" id="yWD-1y-0Ye"/>
+                        <outlet property="showAdButton" destination="gVc-NP-WML" id="HNe-Rl-piz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSS-Op-rC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5588.4057971014499" y="985.71428571428567"/>
+        </scene>
+        <!--AdMob Mediation Rewarded-->
+        <scene sceneID="Ev2-m2-Ovh">
+            <objects>
+                <viewController title="AppLovin Mediation Rewarded" id="nDb-5D-VdQ" userLabel="AdMob Mediation Rewarded" customClass="Rewarded" customModule="Disco" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qr8-w6-tiO"/>
+                        <viewControllerLayoutGuide type="bottom" id="42r-R7-7S1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mJ3-F7-LBi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ka-bU-61O">
+                                <rect key="frame" x="16" y="95" width="382" height="33"/>
+                                <color key="backgroundColor" red="0.85098040100000005" green="0.85098040100000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loadAdButton" label="Load Ad Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="64l-OX-hfK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Load Ad"/>
+                                <connections>
+                                    <action selector="loadAdTouchUpInside:" destination="nDb-5D-VdQ" eventType="touchUpInside" id="aRd-ex-bUV"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="C7R-td-bmy">
+                                <rect key="frame" x="188.5" y="400.5" width="37" height="37"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFt-Sl-e3o">
+                                <rect key="frame" x="16" y="136" width="382" height="33"/>
+                                <color key="backgroundColor" red="0.85098040100000005" green="0.85098040100000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="showAdButton" label="Show Ad Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Crk-Hk-tsT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Show Ad"/>
+                                <connections>
+                                    <action selector="showAdTouchUpInside:" destination="nDb-5D-VdQ" eventType="touchUpInside" id="nbQ-sX-iM7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcb-Wb-PxZ" userLabel="Debug Button">
+                                <rect key="frame" x="16" y="771" width="378" height="33"/>
+                                <color key="backgroundColor" red="0.36470589040000001" green="0.59607845540000004" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="debugButton" label="Debug Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Vzt-KM-Y6H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Debug">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="Vzt-KM-Y6H"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showDebugView:" destination="nDb-5D-VdQ" eventType="touchUpInside" id="cHw-3z-NQt"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="C8e-4b-Zns">
+                                <rect key="frame" x="16" y="56" width="378" height="32"/>
+                                <segments>
+                                    <segment title="Video"/>
+                                    <segment title="HTML"/>
+                                </segments>
+                                <connections>
+                                    <action selector="choosingRewardedType:" destination="nDb-5D-VdQ" eventType="valueChanged" id="4Ce-02-oIw"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PfM-PU-K71"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PfM-PU-K71" firstAttribute="bottom" secondItem="qcb-Wb-PxZ" secondAttribute="bottom" constant="34" id="ByC-zl-Tpo"/>
+                            <constraint firstItem="PfM-PU-K71" firstAttribute="trailing" secondItem="qcb-Wb-PxZ" secondAttribute="trailing" constant="20" id="E3r-l2-26i"/>
+                            <constraint firstItem="jFt-Sl-e3o" firstAttribute="leading" secondItem="PfM-PU-K71" secondAttribute="leading" constant="16" id="EtX-T2-zzi"/>
+                            <constraint firstItem="1ka-bU-61O" firstAttribute="leading" secondItem="PfM-PU-K71" secondAttribute="leading" constant="16" id="KAY-gg-MD2"/>
+                            <constraint firstItem="jFt-Sl-e3o" firstAttribute="top" secondItem="1ka-bU-61O" secondAttribute="bottom" constant="8" id="O1N-nd-s5b"/>
+                            <constraint firstItem="PfM-PU-K71" firstAttribute="trailing" secondItem="jFt-Sl-e3o" secondAttribute="trailing" constant="16" id="SKY-eM-S0E"/>
+                            <constraint firstItem="PfM-PU-K71" firstAttribute="trailing" secondItem="1ka-bU-61O" secondAttribute="trailing" constant="16" id="Wbr-sL-YNt"/>
+                            <constraint firstItem="qcb-Wb-PxZ" firstAttribute="leading" secondItem="PfM-PU-K71" secondAttribute="leading" constant="16" id="b2i-Fa-U5T"/>
+                            <constraint firstItem="1ka-bU-61O" firstAttribute="top" secondItem="C8e-4b-Zns" secondAttribute="bottom" constant="8" symbolic="YES" id="d3M-z8-XMp"/>
+                            <constraint firstItem="C8e-4b-Zns" firstAttribute="top" secondItem="PfM-PU-K71" secondAttribute="top" constant="8" id="g2M-xv-vae"/>
+                            <constraint firstItem="C7R-td-bmy" firstAttribute="centerX" secondItem="mJ3-F7-LBi" secondAttribute="centerX" id="kkK-ow-xM7"/>
+                            <constraint firstItem="C8e-4b-Zns" firstAttribute="leading" secondItem="PfM-PU-K71" secondAttribute="leading" constant="16" id="m0i-aJ-TZy"/>
+                            <constraint firstItem="C7R-td-bmy" firstAttribute="centerY" secondItem="mJ3-F7-LBi" secondAttribute="centerY" id="vnb-Pm-nrW"/>
+                            <constraint firstItem="PfM-PU-K71" firstAttribute="trailing" secondItem="C8e-4b-Zns" secondAttribute="trailing" constant="20" id="yXg-n8-Pry"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="In-view Rewarded video" id="Ugy-kf-UPY"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="C7R-td-bmy" id="j8W-az-uvx"/>
+                        <outlet property="debugButton" destination="qcb-Wb-PxZ" id="9Dl-3u-LXU"/>
+                        <outlet property="showAdButton" destination="jFt-Sl-e3o" id="13Y-Ey-G4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5T-Lm-t2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4784.057971014493" y="985.71428571428567"/>
+        </scene>
+        <!--In-view Native Ad-->
+        <scene sceneID="qy1-KR-fTQ">
+            <objects>
+                <viewController id="ND3-io-5zL" customClass="Native" customModule="Disco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dt7-WP-ENF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNI-Vc-tTr">
+                                <rect key="frame" x="20" y="56" width="374" height="33"/>
+                                <color key="backgroundColor" red="0.85098040100000005" green="0.85098040100000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loadAdButton" label="Load Ad Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Ddp-5S-AuE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Load Ad"/>
+                                <connections>
+                                    <action selector="loadAd" destination="ND3-io-5zL" eventType="touchUpInside" id="sjL-tA-M2t"/>
+                                </connections>
+                            </button>
+                            <view tag="1008" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2g-Fl-cVg" userLabel="Native Ad Background" customClass="GADNativeAdView">
+                                <rect key="frame" x="36" y="97" width="343" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="nativeAdBackgroundView" label="Native Ad Background View">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="IpS-SD-YZn"/>
+                                    <constraint firstAttribute="height" constant="300" id="L51-4c-4bQ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cV7-jA-dbG" userLabel="Debug Button">
+                                <rect key="frame" x="20" y="771" width="374" height="33"/>
+                                <color key="backgroundColor" red="0.36470589040000001" green="0.59607845540000004" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="debugButton" label="Debug Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Xwh-XT-QJb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Debug">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="Xwh-XT-QJb"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showDebugView:" destination="ND3-io-5zL" eventType="touchUpInside" id="8KY-wI-r88"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="PS8-Nb-CZ7" userLabel="Native Ad Loader Indicator">
+                                <rect key="frame" x="188.5" y="219" width="37" height="37"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nlm-0P-mOW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PNI-Vc-tTr" firstAttribute="leading" secondItem="nlm-0P-mOW" secondAttribute="leading" constant="20" id="3cq-48-WJL"/>
+                            <constraint firstItem="nlm-0P-mOW" firstAttribute="bottom" secondItem="cV7-jA-dbG" secondAttribute="bottom" constant="34" id="5PH-Cz-LRz"/>
+                            <constraint firstItem="nlm-0P-mOW" firstAttribute="trailing" secondItem="PNI-Vc-tTr" secondAttribute="trailing" constant="20" id="7MP-ea-KbE"/>
+                            <constraint firstItem="nlm-0P-mOW" firstAttribute="trailing" secondItem="J2g-Fl-cVg" secondAttribute="trailing" constant="35" id="JNl-P1-57H"/>
+                            <constraint firstItem="PNI-Vc-tTr" firstAttribute="top" secondItem="nlm-0P-mOW" secondAttribute="top" constant="8" id="Jza-k5-VNI"/>
+                            <constraint firstItem="nlm-0P-mOW" firstAttribute="trailing" secondItem="cV7-jA-dbG" secondAttribute="trailing" constant="20" id="ShE-dg-N16"/>
+                            <constraint firstItem="PS8-Nb-CZ7" firstAttribute="top" secondItem="PNI-Vc-tTr" secondAttribute="bottom" constant="130" id="WQR-PD-RCn"/>
+                            <constraint firstItem="J2g-Fl-cVg" firstAttribute="top" secondItem="PNI-Vc-tTr" secondAttribute="bottom" constant="8" symbolic="YES" id="oB4-lX-Utd"/>
+                            <constraint firstItem="PS8-Nb-CZ7" firstAttribute="centerX" secondItem="Dt7-WP-ENF" secondAttribute="centerX" id="sPm-pX-dHz"/>
+                            <constraint firstItem="cV7-jA-dbG" firstAttribute="leading" secondItem="nlm-0P-mOW" secondAttribute="leading" constant="20" id="v8T-Ya-Dnd"/>
+                            <constraint firstItem="J2g-Fl-cVg" firstAttribute="leading" secondItem="nlm-0P-mOW" secondAttribute="leading" constant="36" id="ve6-c8-o1F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="In-view Native Ad" id="nsd-bq-jEm"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="PS8-Nb-CZ7" id="68d-u4-aWf"/>
+                        <outlet property="debugButton" destination="cV7-jA-dbG" id="X4i-rT-TWK"/>
+                        <outlet property="nativeAdContainer" destination="J2g-Fl-cVg" id="7lh-PH-0AK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqh-Nb-Kud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4030.434782608696" y="985.71428571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

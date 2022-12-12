@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WVh-QX-tvW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Integration Demo-->
+        <scene sceneID="cpz-y0-7b4">
+            <objects>
+                <viewController id="Ol8-X2-814" customClass="ViewController" customModule="Disco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rcc-pG-9pM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcK-Ki-q0c" userLabel="AppLovin Mediation Button">
+                                <rect key="frame" x="16" y="129" width="382" height="33"/>
+                                <color key="backgroundColor" red="0.85098618270000004" green="0.85097014900000001" blue="0.85098105670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="appLovinMediationButton" label="AppLovin Mediation Button">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="2zi-tb-qhr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="AdMob Mediation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.44761112330000002" green="0.097065538169999993" blue="0.48637124900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="2zi-tb-qhr"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="w5Y-Ec-Uz8" kind="show" id="lMT-0l-ggm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Integration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdZ-71-kQM" userLabel="Integration">
+                                <rect key="frame" x="16" y="100" width="67" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="integrationLabel" label="Integration Label"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yeA-hQ-62p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="yeA-hQ-62p"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cI6-ea-vMZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HdZ-71-kQM" firstAttribute="leading" secondItem="cI6-ea-vMZ" secondAttribute="leading" constant="16" id="Ucw-fw-R9L"/>
+                            <constraint firstItem="ZcK-Ki-q0c" firstAttribute="leading" secondItem="cI6-ea-vMZ" secondAttribute="leading" constant="16" id="XWy-aU-i1W"/>
+                            <constraint firstItem="ZcK-Ki-q0c" firstAttribute="top" secondItem="HdZ-71-kQM" secondAttribute="bottom" constant="8" id="i29-Lo-cBo"/>
+                            <constraint firstItem="cI6-ea-vMZ" firstAttribute="trailing" secondItem="ZcK-Ki-q0c" secondAttribute="trailing" constant="16" id="ker-bY-PQg"/>
+                            <constraint firstItem="HdZ-71-kQM" firstAttribute="top" secondItem="cI6-ea-vMZ" secondAttribute="top" constant="8" id="p44-JC-WB4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Integration Demo" id="mga-WJ-wyz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4QC-aa-eGe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.76923076923072" y="78.909952606635073"/>
+        </scene>
+        <!--AdMobMediation-->
+        <scene sceneID="j4M-rG-AzH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdMobMediation" id="w5Y-Ec-Uz8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IUO-eX-kIY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upc-2I-yNq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456" y="78"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DIx-5s-7JY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WVh-QX-tvW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hyt-TX-icW">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.36470589040000001" green="0.59607845540000004" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ol8-X2-814" kind="relationship" relationship="rootViewController" id="vAV-Jl-c1b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6pU-QM-cuc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.461538461538453" y="78.909952606635073"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
