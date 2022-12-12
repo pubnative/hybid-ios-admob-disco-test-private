@@ -69,9 +69,7 @@
 		91F3B71D2912E0B300AD4996 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		91FC207C291E7E3700839DC4 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		91FC207E291E90B800839DC4 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
-		AB4569BDF16E3FAAC4CE8CD1 /* Pods-AppLovin Mediation Waterfall Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovin Mediation Waterfall Demo.debug.xcconfig"; path = "Target Support Files/Pods-AppLovin Mediation Waterfall Demo/Pods-AppLovin Mediation Waterfall Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		CD87BEBC29BBEFEB98AD9570 /* Pods-Disco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disco.debug.xcconfig"; path = "Target Support Files/Pods-Disco/Pods-Disco.debug.xcconfig"; sourceTree = "<group>"; };
-		D6E51C4E3CADE4E9AD08A05E /* Pods-AppLovin Mediation Waterfall Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovin Mediation Waterfall Demo.release.xcconfig"; path = "Target Support Files/Pods-AppLovin Mediation Waterfall Demo/Pods-AppLovin Mediation Waterfall Demo.release.xcconfig"; sourceTree = "<group>"; };
 		EE389AF4FC5BF69FC1271A68 /* Pods_Disco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Disco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -171,8 +169,6 @@
 		67D84FD43507C10D9A76C21C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AB4569BDF16E3FAAC4CE8CD1 /* Pods-AppLovin Mediation Waterfall Demo.debug.xcconfig */,
-				D6E51C4E3CADE4E9AD08A05E /* Pods-AppLovin Mediation Waterfall Demo.release.xcconfig */,
 				CD87BEBC29BBEFEB98AD9570 /* Pods-Disco.debug.xcconfig */,
 				696A7DB26A36FC75E86FA08E /* Pods-Disco.release.xcconfig */,
 			);
