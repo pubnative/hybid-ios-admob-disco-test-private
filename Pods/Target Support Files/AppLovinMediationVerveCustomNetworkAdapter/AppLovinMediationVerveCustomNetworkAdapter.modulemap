@@ -1,6 +1,0 @@
-framework module AppLovinMediationVerveCustomNetworkAdapter {
-  umbrella header "AppLovinMediationVerveCustomNetworkAdapter-umbrella.h"
-
-  export *
-  module * { export * }
-}
