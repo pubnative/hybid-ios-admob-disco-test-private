@@ -30,7 +30,7 @@ enum AdType {
         case .Banner:
             return "ca-app-pub-8741261465579918/4075513559"
         case .MRectVideo:
-            return "ca-app-pub-8741261465579918/6510105208"
+            return ""
         case .MRectHTML:
             return "ca-app-pub-8741261465579918/6510105208"
         case .Leaderboard:

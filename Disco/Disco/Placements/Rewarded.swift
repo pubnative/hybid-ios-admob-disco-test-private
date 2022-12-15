@@ -2,6 +2,11 @@ import UIKit
 import GoogleMobileAds
 import HyBid
 
+enum RewardedFormatPlacement: String {
+    case Video = "ca-app-pub-8741261465579918/7366717846"
+    case HTML = ""
+}
+
 class Rewarded: UIViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -9,7 +14,7 @@ class Rewarded: UIViewController {
     @IBOutlet weak var debugButton: UIButton!
 
     var rewardedAd: GADRewardedAd!
-    var adUnitID = "ca-app-pub-8741261465579918/7366717846"
+    var adUnitID: RewardedFormatPlacement = .Video
     var eventPageSheet: EventsDetailsViewController?
     var pageSheetNavigationController = UINavigationController()
     
@@ -28,7 +33,7 @@ class Rewarded: UIViewController {
     @IBAction func loadAdTouchUpInside(_ sender: UIButton) {
         activityIndicator.startAnimating()
         let request = GADRequest()
-        GADRewardedAd.load(withAdUnitID: adUnitID,
+        GADRewardedAd.load(withAdUnitID: adUnitID.rawValue,
                                 request: request,
                                 completionHandler: { [self] ad, error in
                                 if let error = error {
@@ -55,11 +60,16 @@ class Rewarded: UIViewController {
         }
     }
     
-    @IBAction func choosingRewardedType(_ sender: UISegmentedControl) {
+    @IBAction func choosingInterstitialType(_ sender: UISegmentedControl) {
         debugButton.isHidden = true
         showAdButton.isHidden = true
+        if sender.selectedSegmentIndex == 0 {
+            adUnitID = .Video
+        } else {
+            adUnitID = .HTML
+        }
     }
-    
+
     @IBAction func showDebugView(_ sender: Any) {
         self.showDebugPageSheet()
     }

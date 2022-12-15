@@ -466,6 +466,7 @@
         <!--AdMob Mediation Banner-->
         <scene sceneID="z4B-co-yF6">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rt4-yC-myB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Overlapped Banner" id="Mf8-My-Oq3" userLabel="AdMob Mediation Banner" customClass="BannerOverlappedViewController" customModule="Disco" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OGo-iY-85Y"/>
@@ -590,7 +591,6 @@
                         <outlet property="overlappedView" destination="mjb-AW-o3b" id="kFC-Te-ROm"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rt4-yC-myB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1581.5384615384614" y="699.52606635071083"/>
         </scene>

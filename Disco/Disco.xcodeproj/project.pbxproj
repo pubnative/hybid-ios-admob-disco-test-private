@@ -17,6 +17,7 @@
 		344C8A3327DB7635000B9C6F /* Interstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C8A3227DB7635000B9C6F /* Interstitial.swift */; };
 		344C8A3527DB7C68000B9C6F /* Rewarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344C8A3427DB7C68000B9C6F /* Rewarded.swift */; };
 		3496DA852943A2BD0092D5EC /* NativeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3496DA842943A2BD0092D5EC /* NativeView.xib */; };
+		3496DA87294B764C0092D5EC /* BannerOverlappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3496DA86294B764C0092D5EC /* BannerOverlappedViewController.swift */; };
 		91345ABF291BCA8600461895 /* AnalyticsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91345ABE291BCA8600461895 /* AnalyticsDetailViewController.swift */; };
 		9179643C2913E17500F68C94 /* AdTypeOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179643B2913E17500F68C94 /* AdTypeOptionsViewController.swift */; };
 		9179643E29141CBA00F68C94 /* Native.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179643D29141CBA00F68C94 /* Native.swift */; };
@@ -50,6 +51,7 @@
 		344C8A3227DB7635000B9C6F /* Interstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interstitial.swift; sourceTree = "<group>"; };
 		344C8A3427DB7C68000B9C6F /* Rewarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewarded.swift; sourceTree = "<group>"; };
 		3496DA842943A2BD0092D5EC /* NativeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeView.xib; sourceTree = "<group>"; };
+		3496DA86294B764C0092D5EC /* BannerOverlappedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerOverlappedViewController.swift; sourceTree = "<group>"; };
 		696A7DB26A36FC75E86FA08E /* Pods-Disco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Disco.release.xcconfig"; path = "Target Support Files/Pods-Disco/Pods-Disco.release.xcconfig"; sourceTree = "<group>"; };
 		91345ABE291BCA8600461895 /* AnalyticsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDetailViewController.swift; sourceTree = "<group>"; };
 		9179643B2913E17500F68C94 /* AdTypeOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTypeOptionsViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				91CD518B2912E90300330B2A /* BannerScrollViewController.swift */,
 				91CD518C2912E90300330B2A /* BannerTableViewCell.swift */,
 				91CD518D2912E90300330B2A /* BannerTableViewController.swift */,
+				3496DA86294B764C0092D5EC /* BannerOverlappedViewController.swift */,
 			);
 			path = Banner;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				9179643C2913E17500F68C94 /* AdTypeOptionsViewController.swift in Sources */,
 				91F3B71E2912E0B300AD4996 /* Quote.swift in Sources */,
 				91F3B7152912DFE600AD4996 /* QuoteTableViewCell.swift in Sources */,
+				3496DA87294B764C0092D5EC /* BannerOverlappedViewController.swift in Sources */,
 				91345ABF291BCA8600461895 /* AnalyticsDetailViewController.swift in Sources */,
 				344C8A1927DB5F57000B9C6F /* SceneDelegate.swift in Sources */,
 				91CD518F2912E90300330B2A /* BannerTableViewCell.swift in Sources */,

@@ -12,6 +12,9 @@ class EventTableViewCell: UITableViewCell {
             timeStampLabel.text = event.getTimeString()
         }
     }
+    override func didMoveToSuperview() {
+        selectionStyle = UITableViewCell.SelectionStyle.none
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
