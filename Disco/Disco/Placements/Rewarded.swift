@@ -54,12 +54,7 @@ class Rewarded: UIViewController {
             print("Ad wasn't ready.")
         }
     }
-    
-    @IBAction func choosingRewardedType(_ sender: UISegmentedControl) {
-        debugButton.isHidden = true
-        showAdButton.isHidden = true
-    }
-    
+
     @IBAction func showDebugView(_ sender: Any) {
         self.showDebugPageSheet()
     }

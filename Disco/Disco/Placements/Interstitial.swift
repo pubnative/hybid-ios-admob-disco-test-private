@@ -2,6 +2,11 @@ import UIKit
 import HyBid
 import GoogleMobileAds
 
+
+enum InterstitialFormatPlacement: String {
+    case Video = "ca-app-pub-8741261465579918/1815008264"
+}
+
 class Interstitial: UIViewController {
   
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -9,10 +14,8 @@ class Interstitial: UIViewController {
     @IBOutlet weak var debugButton: UIButton!
         
     private var interstitialAd: GADInterstitialAd?
+    var adUnitID: InterstitialFormatPlacement = .Video
 
-    let adUnitID = "ca-app-pub-8741261465579918/1815008264"
-
-     
     var eventPageSheet: EventsDetailsViewController?
     var pageSheetNavigationController = UINavigationController()
     
@@ -32,7 +35,7 @@ class Interstitial: UIViewController {
         activityIndicator.startAnimating()
         showAdButton.isHidden = true
         let request = GADRequest()
-        GADInterstitialAd.load(withAdUnitID: adUnitID,
+        GADInterstitialAd.load(withAdUnitID: adUnitID.rawValue,
                                request: request,
                                completionHandler: { [self] ad, error in
                                 if let error = error {
@@ -47,7 +50,16 @@ class Interstitial: UIViewController {
                         }
         )
     }
-                               
+       
+    @IBAction func choosingInterstitialType(_ sender: UISegmentedControl) {
+        debugButton.isHidden = true
+        showAdButton.isHidden = true
+        if sender.selectedSegmentIndex == 0 {
+            adUnitID = .Video
+        } else {
+            adUnitID = .Video
+        }
+    }
     
     @IBAction func showAdTouchUpInside(_ sender: UIButton) {
         if interstitialAd != nil  {
@@ -55,11 +67,6 @@ class Interstitial: UIViewController {
         } else {
             print("Ad wasn't ready")
         }
-    }
-    
-    @IBAction func choosingInterstitialType(_ sender: UISegmentedControl) {
-        debugButton.isHidden = true
-        showAdButton.isHidden = true
     }
     
     @IBAction func showDebugView(_ sender: Any) {

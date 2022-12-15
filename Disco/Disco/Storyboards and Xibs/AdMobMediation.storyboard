@@ -292,7 +292,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ka-bU-61O">
-                                <rect key="frame" x="16" y="95" width="382" height="33"/>
+                                <rect key="frame" x="16" y="64" width="382" height="33"/>
                                 <color key="backgroundColor" red="0.85098040100000005" green="0.85098040100000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration" identifier="loadAdButton" label="Load Ad Button"/>
                                 <constraints>
@@ -310,7 +310,7 @@
                                 <color key="color" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFt-Sl-e3o">
-                                <rect key="frame" x="16" y="136" width="382" height="33"/>
+                                <rect key="frame" x="16" y="105" width="382" height="33"/>
                                 <color key="backgroundColor" red="0.85098040100000005" green="0.85098040100000005" blue="0.85098040100000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration" identifier="showAdButton" label="Show Ad Button"/>
                                 <constraints>
@@ -344,16 +344,6 @@
                                     <action selector="showDebugView:" destination="nDb-5D-VdQ" eventType="touchUpInside" id="cHw-3z-NQt"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="C8e-4b-Zns">
-                                <rect key="frame" x="16" y="56" width="378" height="32"/>
-                                <segments>
-                                    <segment title="Video"/>
-                                    <segment title="HTML"/>
-                                </segments>
-                                <connections>
-                                    <action selector="choosingRewardedType:" destination="nDb-5D-VdQ" eventType="valueChanged" id="4Ce-02-oIw"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PfM-PU-K71"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -366,12 +356,9 @@
                             <constraint firstItem="PfM-PU-K71" firstAttribute="trailing" secondItem="jFt-Sl-e3o" secondAttribute="trailing" constant="16" id="SKY-eM-S0E"/>
                             <constraint firstItem="PfM-PU-K71" firstAttribute="trailing" secondItem="1ka-bU-61O" secondAttribute="trailing" constant="16" id="Wbr-sL-YNt"/>
                             <constraint firstItem="qcb-Wb-PxZ" firstAttribute="leading" secondItem="PfM-PU-K71" secondAttribute="leading" constant="16" id="b2i-Fa-U5T"/>
-                            <constraint firstItem="1ka-bU-61O" firstAttribute="top" secondItem="C8e-4b-Zns" secondAttribute="bottom" constant="8" symbolic="YES" id="d3M-z8-XMp"/>
-                            <constraint firstItem="C8e-4b-Zns" firstAttribute="top" secondItem="PfM-PU-K71" secondAttribute="top" constant="8" id="g2M-xv-vae"/>
                             <constraint firstItem="C7R-td-bmy" firstAttribute="centerX" secondItem="mJ3-F7-LBi" secondAttribute="centerX" id="kkK-ow-xM7"/>
-                            <constraint firstItem="C8e-4b-Zns" firstAttribute="leading" secondItem="PfM-PU-K71" secondAttribute="leading" constant="16" id="m0i-aJ-TZy"/>
+                            <constraint firstItem="1ka-bU-61O" firstAttribute="top" secondItem="PfM-PU-K71" secondAttribute="top" constant="16" id="sIm-Jm-p5G"/>
                             <constraint firstItem="C7R-td-bmy" firstAttribute="centerY" secondItem="mJ3-F7-LBi" secondAttribute="centerY" id="vnb-Pm-nrW"/>
-                            <constraint firstItem="PfM-PU-K71" firstAttribute="trailing" secondItem="C8e-4b-Zns" secondAttribute="trailing" constant="20" id="yXg-n8-Pry"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="In-view Rewarded video" id="Ugy-kf-UPY"/>
