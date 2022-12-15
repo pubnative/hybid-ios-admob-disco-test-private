@@ -5,6 +5,7 @@ import GoogleMobileAds
 
 enum InterstitialFormatPlacement: String {
     case Video = "ca-app-pub-8741261465579918/1815008264"
+    case HTML = "ca-app-pub-8741261465579918/6510105208"
 }
 
 class Interstitial: UIViewController {
@@ -57,7 +58,7 @@ class Interstitial: UIViewController {
         if sender.selectedSegmentIndex == 0 {
             adUnitID = .Video
         } else {
-            adUnitID = .Video
+            adUnitID = .HTML
         }
     }
     
