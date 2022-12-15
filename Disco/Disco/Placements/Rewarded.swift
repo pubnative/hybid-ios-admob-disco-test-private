@@ -3,8 +3,8 @@ import GoogleMobileAds
 import HyBid
 
 enum RewardedFormatPlacement: String {
-    case Video = "ca-app-pub-8741261465579918/1815008264"
-    case HTML = "ca-app-pub-8741261465579918/6510105208"
+    case Video = "ca-app-pub-8741261465579918/7366717846"
+    case HTML = ""
 }
 
 class Rewarded: UIViewController {

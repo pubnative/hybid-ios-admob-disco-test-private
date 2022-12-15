@@ -1,10 +1,3 @@
-//
-//  BannerOverlappedViewController.swift
-//  Disco
-//
-//  Created by Aysel Abdullayeva on 15.12.22.
-//
-
 import UIKit
 import GoogleMobileAds
 
